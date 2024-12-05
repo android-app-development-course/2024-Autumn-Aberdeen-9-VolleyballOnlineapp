@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.FragmentB"
+    android:background="#EFEFEF"
+    tools:ignore="ExtraText">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="activity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            // 扣球模块
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/spikeImage"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="0dp"
+                        android:src="@drawable/ze_arrow" />
+
+                    <TextView
+                        android:id="@+id/spikeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="扣球教学"
+                        android:textSize="19sp"
+                        android:layout_marginLeft="2dp"/>
+
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/spike1"
+                            android:layout_width="150dp"
+                            android:layout_height="96dp"
+                            android:src="@drawable/spike1"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:paddingLeft="20dp"/>
+
+                        <ImageView
+                            android:id="@+id/spike2"
+                            android:layout_width="150dp"
+                            android:layout_height="96dp"
+                            android:src="@drawable/spike2"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:paddingLeft="20dp" />
+
+                        <ImageView
+                            android:id="@+id/spike3"
+                            android:layout_width="150dp"
+                            android:layout_height="96dp"
+                            android:src="@drawable/spike3"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:paddingLeft="20dp"/>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            // 扣球模块结束
+
+
+            // 发球模块
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/faImage"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="0dp"
+                        android:src="@drawable/ze_arrow" />
+
+                    <TextView
+                        android:id="@+id/faText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发球教学"
+                        android:textSize="19sp"
+                        android:layout_marginLeft="2dp"/>
+
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/fa1"
+                            android:layout_width="150dp"
+                            android:layout_height="96dp"
+                            android:src="@drawable/faball1"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:paddingLeft="20dp"/>
+
+                        <ImageView
+                            android:id="@+id/fa2"
+                            android:layout_width="150dp"
+                            android:layout_height="96dp"
+                            android:src="@drawable/faball2"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:paddingLeft="20dp" />
+
+                        <ImageView
+                            android:id="@+id/fa3"
+                            android:layout_width="150dp"
+                            android:layout_height="96dp"
+                            android:src="@drawable/faball3"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:paddingLeft="20dp"/>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            // 发球模块结束
+
+
+            // 垫球模块
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/dianImage"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="0dp"
+                        android:src="@drawable/ze_arrow" />
+
+                    <TextView
+                        android:id="@+id/dianText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="垫球教学"
+                        android:textSize="19sp"
+                        android:layout_marginLeft="2dp"/>
+
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/dian1"
+                            android:layout_width="150dp"
+                            android:layout_height="96dp"
+                            android:src="@drawable/dian1"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:paddingLeft="20dp"/>
+
+                        <ImageView
+                            android:id="@+id/dian2"
+                            android:layout_width="150dp"
+                            android:layout_height="96dp"
+                            android:src="@drawable/dian2"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:paddingLeft="20dp" />
+
+                        <ImageView
+                            android:id="@+id/dian3"
+                            android:layout_width="150dp"
+                            android:layout_height="96dp"
+                            android:src="@drawable/dian3"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:paddingLeft="20dp"/>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            // 垫球模块结束
+
+
+            // 传球模块
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/chuanImage"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="0dp"
+                        android:src="@drawable/ze_arrow" />
+
+                    <TextView
+                        android:id="@+id/chuanText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="传球教学"
+                        android:textSize="19sp"
+                        android:layout_marginLeft="2dp"/>
+
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/chuan1"
+                            android:layout_width="150dp"
+                            android:layout_height="96dp"
+                            android:src="@drawable/chuan1"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:paddingLeft="20dp"/>
+
+                        <ImageView
+                            android:id="@+id/chuan2"
+                            android:layout_width="150dp"
+                            android:layout_height="96dp"
+                            android:src="@drawable/chuan2"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:paddingLeft="20dp" />
+
+                        <ImageView
+                            android:id="@+id/chuan3"
+                            android:layout_width="150dp"
+                            android:layout_height="96dp"
+                            android:src="@drawable/chuan3"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:paddingLeft="20dp"/>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            // 传球模块结束
+
+
+        </LinearLayout>>
+    </ScrollView>>
+
+
+
+</LinearLayout>
